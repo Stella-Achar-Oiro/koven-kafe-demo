@@ -2,6 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap');
 
+@theme {
+  --color-primary: #A26B55;
+  --color-secondary: #CEB0A4;
+  --color-accent: #630900;
+  --color-highlight: #993509;
+  --color-cream: #F3EFEC;
+  --color-success: #52B788;
+  --color-warning: #FFB703;
+  --color-error: #D62828;
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Poppins', sans-serif;
+}
+
 @layer utilities {
   .animate-count-up {
     animation: countUp 0.5s ease-out;
