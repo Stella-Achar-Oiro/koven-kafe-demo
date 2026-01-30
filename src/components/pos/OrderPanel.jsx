@@ -13,7 +13,7 @@ const OrderPanel = ({
   const total = subtotal + tax - discount;
 
   return (
-    <div className="w-96 bg-white flex flex-col h-screen border-l border-gray-200 hidden xl:flex">
+    <div className="w-96 bg-white flex flex-col h-screen border-l border-gray-200">
       {/* Header */}
       <div className="p-6 border-b border-gray-200">
         <div className="flex items-center justify-between mb-1">

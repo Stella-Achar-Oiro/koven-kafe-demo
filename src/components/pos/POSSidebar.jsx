@@ -12,7 +12,7 @@ const POSSidebar = () => {
   ];
 
   return (
-    <div className="w-60 bg-accent text-white flex flex-col h-screen hidden lg:flex">
+    <div className="w-60 bg-accent text-white flex flex-col h-screen">
       {/* Logo Section */}
       <div className="p-6 border-b border-white/10">
         <img
