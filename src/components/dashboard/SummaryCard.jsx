@@ -17,7 +17,7 @@ const SummaryCard = ({ title, value, change, icon, isLoading = false }) => {
   const isPositive = change >= 0;
   
   return (
-    <Card className="transition-all hover:scale-105">
+    <Card glass hover className="transition-all">
       <div className="flex items-start justify-between">
         <div className="flex-1">
           <p className="text-sm text-gray-600 mb-2">{title}</p>

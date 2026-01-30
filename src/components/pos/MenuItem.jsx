@@ -4,21 +4,38 @@ import { formatCurrency } from '../../utils/formatters';
 
 const MenuItem = ({ item, onAdd }) => {
   return (
-    <button
-      onClick={() => onAdd(item)}
-      className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all hover:scale-105 text-left w-full"
-    >
-      <div className="text-5xl mb-3 text-center">{item.icon}</div>
-      <h3 className="font-semibold text-accent mb-1 text-sm md:text-base">{item.name}</h3>
-      <div className="flex items-center justify-between">
-        <span className="font-display font-bold text-primary text-lg">
-          {formatCurrency(item.price)}
+    <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all overflow-hidden group">
+      {/* Availability Badge */}
+      <div className="absolute top-3 right-3 z-10">
+        <span className="bg-success text-white text-xs font-bold px-2 py-1 rounded-full flex items-center gap-1">
+          ● Available
         </span>
-        <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center">
-          <Plus size={16} />
-        </div>
       </div>
-    </button>
+
+      {/* Item Image/Icon Container */}
+      <div className="relative bg-gradient-to-br from-cream to-secondary/20 p-8 flex items-center justify-center h-48">
+        <div className="text-6xl group-hover:scale-110 transition-transform">{item.icon}</div>
+      </div>
+
+      {/* Item Details */}
+      <div className="p-4">
+        <div className="flex items-start justify-between mb-3">
+          <h3 className="font-bold text-accent text-base leading-tight">{item.name}</h3>
+          <span className="font-display font-bold text-accent text-xl ml-2 whitespace-nowrap">
+            {formatCurrency(item.price)}
+          </span>
+        </div>
+
+        {/* Add to Cart Button - Using dark accent color for high contrast */}
+        <button
+          onClick={() => onAdd(item)}
+          className="w-full bg-accent hover:bg-accent/90 text-white font-bold py-3 px-4 rounded-xl transition-all flex items-center justify-center gap-2 shadow-md hover:shadow-lg active:scale-95"
+        >
+          <Plus size={20} strokeWidth={2.5} />
+          <span>Add to Cart</span>
+        </button>
+      </div>
+    </div>
   );
 };
 

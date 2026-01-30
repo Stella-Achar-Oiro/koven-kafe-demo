@@ -11,7 +11,7 @@ const RecentTransactions = ({ transactions }) => {
   };
   
   return (
-    <Card>
+    <Card glass>
       <div className="flex items-center gap-2 mb-4">
         <Clock className="text-primary" size={24} />
         <h3 className="text-xl font-bold text-accent">Recent Transactions</h3>

@@ -5,7 +5,7 @@ import { TrendingUp, TrendingDown, Circle } from 'lucide-react';
 
 const BranchPerformance = ({ branches, branchStats }) => {
   return (
-    <Card>
+    <Card glass>
       <h3 className="text-xl font-bold text-accent mb-4">Branch Performance</h3>
       <div className="space-y-4">
         {branches.map(branch => {

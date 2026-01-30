@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, Eye, ShoppingBag, BarChart3 } from 'lucide-react';
+import { TrendingUp, Eye, ShoppingBag, BarChart3, Smartphone, Zap, DollarSign } from 'lucide-react';
 import Card from '../shared/Card';
 
 const Features = () => {
@@ -41,7 +41,7 @@ const Features = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
-            <Card key={index} hover className="text-center">
+            <Card key={index} glass hover className="text-center">
               <div className="flex justify-center mb-4">{feature.icon}</div>
               <h3 className="text-xl font-bold text-accent mb-3">{feature.title}</h3>
               <p className="text-gray-600">{feature.description}</p>
@@ -50,21 +50,21 @@ const Features = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <Card className="bg-gradient-to-r from-primary to-accent text-white">
+          <Card glass className="bg-gradient-to-r from-primary to-accent text-white">
             <h3 className="text-2xl font-display font-bold mb-2">Ready to Transform Your Business?</h3>
-            <p className="text-secondary mb-4">Experience the demo and see how easy restaurant management can be.</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <p className="text-cream/90 mb-6">Experience the demo and see how easy restaurant management can be.</p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <div className="flex items-center gap-2 justify-center">
-                <span className="text-3xl">📱</span>
-                <span>Mobile Responsive</span>
+                <Smartphone size={24} className="text-cream" />
+                <span className="font-semibold">Mobile Responsive</span>
               </div>
               <div className="flex items-center gap-2 justify-center">
-                <span className="text-3xl">⚡</span>
-                <span>Lightning Fast</span>
+                <Zap size={24} className="text-cream" />
+                <span className="font-semibold">Lightning Fast</span>
               </div>
               <div className="flex items-center gap-2 justify-center">
-                <span className="text-3xl">💰</span>
-                <span>Affordable</span>
+                <DollarSign size={24} className="text-cream" />
+                <span className="font-semibold">Affordable</span>
               </div>
             </div>
           </Card>

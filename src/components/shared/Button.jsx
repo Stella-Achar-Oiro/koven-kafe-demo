@@ -10,14 +10,14 @@ const Button = ({
   type = 'button',
   className = ''
 }) => {
-  const baseClasses = 'font-semibold rounded-lg transition-all duration-200 flex items-center justify-center gap-2';
-  
+  const baseClasses = 'font-semibold rounded-xl transition-all duration-300 flex items-center justify-center gap-2 active:scale-95';
+
   const variants = {
-    primary: 'bg-primary hover:bg-primary/90 text-white shadow-md hover:shadow-lg',
-    secondary: 'bg-secondary hover:bg-secondary/90 text-accent shadow-md hover:shadow-lg',
-    outline: 'border-2 border-primary text-primary hover:bg-primary hover:text-white',
+    primary: 'bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-2xl hover:scale-105',
+    secondary: 'bg-secondary hover:bg-secondary/90 text-accent shadow-lg hover:shadow-2xl hover:scale-105',
+    outline: 'border-2 border-primary text-primary hover:bg-primary hover:text-white shadow-md hover:shadow-xl',
     ghost: 'text-primary hover:bg-primary/10',
-    danger: 'bg-error hover:bg-error/90 text-white shadow-md hover:shadow-lg'
+    danger: 'bg-error hover:bg-error/90 text-white shadow-lg hover:shadow-2xl hover:scale-105'
   };
   
   const sizes = {

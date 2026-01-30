@@ -1,8 +1,20 @@
 # Koven Kafe POS System - Interactive Demo
 
-🐟 **A Fishy Affair** - Simple, Powerful, Multi-Branch Restaurant Management
+**A Fishy Affair** - Simple, Powerful, Multi-Branch Restaurant Management
 
 Built by **Evarest Technologies Ltd** for **Dr. Amakove Wala**
+
+## Official Brand Colors
+
+This demo uses Koven Kafe's official brand palette:
+
+- **Warm Off-White / Cream**: `#F3EFEC` (60% - Primary backgrounds)
+- **Primary Brand Brown**: `#A26B55` (20% - Logo, headings, key elements)
+- **Soft Blush / Muted Clay**: `#CEB0A4` (10% - Secondary accents)
+- **Deep Espresso Brown**: `#630900` (5% - Prices, totals, emphasis)
+- **Burnt Rust / Dark Copper**: `#993509` (5% - Highlights, icons)
+
+**Logo**: Official logo provided by Dr. Amakove Wala
 
 ## 🚀 Live Demo Features
 
@@ -59,4 +71,4 @@ Works perfectly on phones, tablets, and desktops!
 
 ---
 
-**#AFishyAffair** 🐟
+**#AFishyAffair**

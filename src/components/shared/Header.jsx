@@ -13,11 +13,11 @@ const Header = ({ userName, userRole }) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <div className="text-2xl">🐟</div>
-            <div>
-              <div className="font-display font-bold text-primary text-lg">Koven Kafe</div>
-              <div className="text-xs text-secondary">A Fishy Affair</div>
-            </div>
+            <img
+              src="https://i.postimg.cc/dtnKLL4X/kklogo.png"
+              alt="Koven Kafe Logo"
+              className="h-12 w-auto object-contain"
+            />
           </Link>
           
           {/* Navigation */}

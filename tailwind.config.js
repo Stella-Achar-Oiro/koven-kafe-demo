@@ -7,13 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#8B4513',
-        secondary: '#D4A574',
-        accent: '#2F1810',
-        success: '#52B788',
+        primary: '#A26B55',      // Primary Brand Brown (20% usage - logo, headings, key elements)
+        secondary: '#CEB0A4',    // Soft Blush / Muted Clay (10% usage - secondary accents)
+        accent: '#630900',       // Deep Espresso Brown (5% usage - prices, totals, emphasis)
+        highlight: '#993509',    // Burnt Rust / Dark Copper (5% usage - highlights, icons)
+        cream: '#F3EFEC',        // Warm Off-White / Cream (60% usage - primary background)
+        success: '#52B788',      // Keep utility colors
         warning: '#FFB703',
         error: '#D62828',
-        cream: '#FFF8F0',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

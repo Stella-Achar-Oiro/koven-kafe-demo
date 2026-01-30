@@ -5,7 +5,7 @@ import { Flame } from 'lucide-react';
 
 const TopItems = ({ items }) => {
   return (
-    <Card>
+    <Card glass>
       <div className="flex items-center gap-2 mb-4">
         <Flame className="text-warning" size={24} />
         <h3 className="text-xl font-bold text-accent">Top Selling Items Today</h3>
